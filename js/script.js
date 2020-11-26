@@ -17,8 +17,9 @@ $(document).ready(
       }
 
     }
+    console.log('memoria', memoria);
 
-    alert('Ciao giocatore!' + '\n' + 'Avrai 30 secondi per ricordare i seguenti numeri: ' + memoria);
+    alert('Ciao giocatore!' + '\n' + 'Dopo il click avrai 30 secondi per ricordare i seguenti numeri: ' + memoria);
 
     // l’utente deve inserire, un prompt alla volta, i numeri che ha visto precedentemente.
     setTimeout(function () {
@@ -50,7 +51,7 @@ $(document).ready(
           alert('Mi spiace, ma devi allenare di piu la tua memoria!' + '\n' + 'Non hai ricordato correttamente nemmeno un numero...');
           break;
         case 1:
-          alert('Intelligente ma non si applica...' + '\n' + 'Hai ricordato correttamente solo un numero: ' + risultato);
+          alert('Intelligente ma non si applica...' + '\n' + 'Hai ricordato correttamente solo il numero ' + risultato);
           break;
         case 2:
           alert('Così così...' + '\n' + 'Hai ricordato correttamente 2 numeri: ' + risultato);
